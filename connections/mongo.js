@@ -24,9 +24,6 @@ var getMongoConnection = function (uri, options, showDebug, callback = null) {
 
     mongoose.Promise = global.Promise;
     var dbOptions = {
-        poolSize: 5,
-        keepAlive: 1000,
-        connectTimeoutMS: 30000,
         useNewUrlParser: true,
         useUnifiedTopology: true,
     };
