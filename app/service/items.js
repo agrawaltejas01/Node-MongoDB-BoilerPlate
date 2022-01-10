@@ -15,7 +15,7 @@ module.exports = {
     addItem: async function (item) {
         const itemObject = itemRepo.newItem(item);
         let [_, err] = await $(itemRepo.save(itemObject));
-        handleError.duplicateKey(err);
+        handleError(err);
         return true;
     },
 };
