@@ -1,3 +1,6 @@
+const $ = require('../../lib/utils').tryCatch;
+const handleError = require('../../lib/utils').handleError;
+
 const itemRepo = require('../repositories/items');
 
 module.exports = {
@@ -7,5 +10,12 @@ module.exports = {
 
     findItems: async function () {
         return itemRepo.find({});
+    },
+
+    addItem: async function (item) {
+        const itemObject = itemRepo.newItem(item);
+        let [_, err] = await $(itemRepo.save(itemObject));
+        handleError.duplicateKey(err);
+        return true;
     },
 };
