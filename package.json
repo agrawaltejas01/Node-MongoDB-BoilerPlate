@@ -1,19 +1,19 @@
 {
-  "name": "dash-api",
-  "version": "1.0.0",
-  "description": "Backend For Dash",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Tejas Agrawal",
-  "license": "ISC",
-  "dependencies": {
-    "async": "^3.2.2",
-    "body-parser": "^1.19.1",
-    "cors": "^2.8.5",
-    "express": "^4.17.2",
-    "joi": "^17.5.0",
-    "mongoose": "^6.1.5"
-  }
+    "name": "node-mongodb-boilerplate",
+    "version": "1.0.0",
+    "description": "Boiler Plate for Node (Expresss) and MongoDB",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Tejas Agrawal",
+    "license": "ISC",
+    "dependencies": {
+        "async": "^3.2.2",
+        "body-parser": "^1.19.1",
+        "cors": "^2.8.5",
+        "express": "^4.17.2",
+        "joi": "^17.5.0",
+        "mongoose": "^6.1.5"
+    }
 }
