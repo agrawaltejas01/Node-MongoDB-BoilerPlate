@@ -15,7 +15,5 @@ const itemSchema = new Schema(
     }
 );
 
-// Comment added
-
 const Items = mongo.model(itemsCollection, itemSchema, itemsCollection);
 module.exports = Items;
